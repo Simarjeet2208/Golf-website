@@ -23,10 +23,11 @@ document.addEventListener('mousemove',(e)=>{
         })
     })
 
+const nav = document.querySelector('.nav')
 const nav_options = document.querySelector('#nav-options')
 const menu_open = document.querySelector('#menu-logo')
 const menu_close = document.querySelector('#menu-close')
-
+const body = document.querySelector('body')
 nav_options.style.maxHeight = '0px';
 
 function toggleMenu(){
@@ -34,11 +35,16 @@ function toggleMenu(){
         nav_options.style.maxHeight = '100vh'
         menu_open.style.display = 'none'
         menu_close.style.display = 'block'
+        body.style.overflowY = "hidden"
+        nav.style.backgroundColor = "black"
+
     }
     else {
         nav_options.style.maxHeight = '0px'
         menu_close.style.display = 'none'
         menu_open.style.display = 'block' 
+        body.style.overflowY = "scroll"
+        nav.style.backgroundColor = "transparent"        
     }
 }
 
@@ -82,7 +88,7 @@ gsap.to(".nav",{
     scrollTrigger:{
         trigger:".nav",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top -10%",
         end: "top -11%",
         scrub:1
@@ -95,7 +101,7 @@ gsap.to(".main",{
     scrollTrigger:{
         trigger:".main",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top -30%",
         end: "top -60%",
         scrub:1

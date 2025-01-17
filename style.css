@@ -563,11 +563,14 @@ marquee span:hover {
     .cursor, .cursor-dot{
         display: none;
     } 
+    body {
+        overflow-x: hidden;
+    }
 
     .nav {
         padding: 30px;
         justify-content: space-between;
-        background-color: #000;
+        /* background-color: #000; */
     }
     .nav #menu-logo {
         display: block;
