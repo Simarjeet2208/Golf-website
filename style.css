@@ -9,8 +9,7 @@
 }
 html,body {
     height: 100%;
-    width: 100vw;
-    /* overflow-x: hidden; */
+    width: 100%;
     perspective: 100%;
 }
 body {
@@ -42,10 +41,10 @@ a {
 .nav {
     position: fixed;;
     height: 140px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     gap: 50px;
-    padding: 0 7%;
+    padding: 0 150px;
     align-items: center;
     justify-content: flex-start;
     z-index: 11;
@@ -69,7 +68,7 @@ a {
 }
 video {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -77,12 +76,12 @@ video {
 .main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.453);
-    width: 100vw;
+    width: 100%;
 }
 .page1 {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -184,9 +183,7 @@ marquee span:hover {
 .cards-container {
     /* background-color: black; */
     height: 100vh;
-    width: 100vw;
-    /* padding: 0 5%; */
-    box-sizing: border-box; 
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -561,28 +558,19 @@ marquee span:hover {
 }
 
 
-/* @media only screen and (max-width: 340px) {
-    .page2 {
-        height: 350vh;
-    }
-    .about-us {
-        height: 130vh;
-    }
-} */
-
 @media only screen and (max-width: 600px) {
      
     .cursor, .cursor-dot{
         display: none;
     } 
-    body,html {
+    .html {
         overflow-x: hidden;
     }
 
     .nav {
         padding: 30px;
         justify-content: space-between;
-        /* background-color: #000; */
+        background-color: #000;
     }
     .nav #menu-logo {
         display: block;
@@ -621,12 +609,12 @@ marquee span:hover {
         font-size: 60px;
     }
     .page2 {
-        height: 380vh;
+        height: 330vh;
     }
     .about-us {
         flex-direction: column;
         padding: 30px;
-        height: 120vh;
+        height: 100vh;
     }
     .about-us-content {
         margin: 50px;
@@ -669,7 +657,6 @@ marquee span:hover {
         position: absolute;
         font-size: 25px;
         width: 100%;
-        padding: 2% 0;
     }
     .green-div-img-2 {
         right: 0%;
@@ -681,7 +668,7 @@ marquee span:hover {
         padding-top: 10vh;
     }
     .food-section {
-        height: 150vh;
+        height: 120vh;
         flex-direction: column;
         padding: 30px;
         justify-content: center;
@@ -699,7 +686,7 @@ marquee span:hover {
         font-size: 16px;
     }
     .marquee-container {
-        height: 80vh;
+        height: 60vh;
     }
     .marquee-container img {
         width: 200px;
